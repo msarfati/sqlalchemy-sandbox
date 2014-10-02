@@ -1,3 +1,3 @@
 DESCRIPTION
 ===========
-Sandbox testing for SQLAlchemy. For personal use.
+Sandbox testing for SQLAlchemy. For training and prototyping use.
