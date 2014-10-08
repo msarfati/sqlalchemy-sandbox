@@ -37,3 +37,9 @@ print('user_table.primary_key =',user_table.primary_key) #Retrieves list of prim
 print(user_table.select()) #The SQL statement to select column. Also takes where:
 
 print(user_table.select().where(user_table.c.fullname == 'Joe'))
+
+#Interface with Engine
+from sqlalchemy import create_engine
+
+engine = create_engine("sqlite://", echo=True)
+metadata.create_all(engine)
