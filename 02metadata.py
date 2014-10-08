@@ -21,7 +21,7 @@ user_table= Table('user', metadata,
                   Column('id', Integer, primary_key=True),
                   Column('name', String),
                   Column('fullname', String)
-                  )
+              )
 print('user_table.name =',user_table.name) #Retrieves name of table
 print('user_table.c.name =',user_table.c.name) #.c is the Associative Array: kind of like a Py dict. 
 print('user_table.c.keys() =',user_table.c.keys()) # All columns are accessible
